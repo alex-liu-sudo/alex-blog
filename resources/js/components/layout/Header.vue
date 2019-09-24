@@ -14,22 +14,31 @@
 
                     <el-menu-item index="1">文章列表</el-menu-item>
 
-                    <el-menu-item class="right"  style="float: right">
+                    <el-menu-item class="right">
                     </el-menu-item>
 
-                    <el-submenu index="2"  style="float: right">
-                        <template slot="title">
-                            <el-avatar :size="40" @error="errorHandler">
-                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1569301114477&di=9defcf090e7bbcc0f02d3a0b0d93a44d&imgtype=0&src=http%3A%2F%2Fpic35.nipic.com%2F20131112%2F12114594_161351489112_2.jpg"/>
-                            </el-avatar>
-                             张三
-                        </template>
+                    <el-menu-item class="sign-btn">
+                        <font-awesome-icon icon="user-plus"  /> 注册
+                    </el-menu-item>
+                    <el-menu-item class="login-btn">
+                        <font-awesome-icon icon="sign-in-alt"  /> 登录
+                    </el-menu-item>
 
-                        <el-menu-item index="2-1">个人中心</el-menu-item>
-                        <el-menu-item index="2-2">退出</el-menu-item>
-                    </el-submenu>
-                    <el-menu-item style="float: right">
-                        <el-input v-model="input" prefix-icon="el-icon-search" placeholder="站内搜索"></el-input>
+
+
+                    <!--<el-submenu index="2"  style="float: right">-->
+                        <!--<template slot="title">-->
+                            <!--<el-avatar :size="40" @error="errorHandler">-->
+                            <!--<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1569301114477&di=9defcf090e7bbcc0f02d3a0b0d93a44d&imgtype=0&src=http%3A%2F%2Fpic35.nipic.com%2F20131112%2F12114594_161351489112_2.jpg"/>-->
+                            <!--</el-avatar>-->
+                             <!--张三-->
+                        <!--</template>-->
+
+                        <!--<el-menu-item index="2-1">个人中心</el-menu-item>-->
+                        <!--<el-menu-item index="2-2">退出</el-menu-item>-->
+                    <!--</el-submenu>-->
+                    <el-menu-item class="search">
+                        <el-input model="input" prefix-icon="el-icon-search" placeholder="站内搜索"></el-input>
                     </el-menu-item>
 
 
@@ -66,18 +75,39 @@
 </script>
 
 <style scoped lang="scss">
-    .logo {
-        img {
-            height: 2.7rem;
-            width: 5rem;
+    #header {
+        .logo {
+            img {
+                height: 2.7rem;
+                width: 5rem;
+            }
+            span {
+                font-size: 1.5rem;
+            }
         }
-        span {
-            font-size: 1.5rem;
+
+        .left,.right {
+            width: 10%;
+        }
+        .right {
+            float: right
+        }
+
+        .search {
+            float: right;
+            padding-right: 0
+        }
+
+        .sign-btn {
+            float: right;
+            padding-left: 0.5rem
+        }
+
+        .login-btn {
+            float: right;
+            padding-right: 0
         }
     }
 
-    .left,.right {
-        width: 10%;
-    }
 
 </style>
