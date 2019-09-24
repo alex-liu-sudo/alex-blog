@@ -1,5 +1,4 @@
 import axios from 'axios'
-import { Dialog } from 'vant';
 
 /**
  * 创建axios对象
@@ -22,10 +21,7 @@ service.interceptors.request.use(function(config) {
 // 响应拦截器 响应处理之前
 service.interceptors.response.use(function(response) {
     if (response.data.code !== 200) {
-        Dialog.alert({
-            title: '警告',
-            message: response.data.message,
-        });
+        console.log(config)
     }
     return response
 });

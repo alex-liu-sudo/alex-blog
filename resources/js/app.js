@@ -28,13 +28,25 @@ import Vue from 'vue';
 import App from './App.vue';
 import router from './router/index.js';
 import store from './store'
-import Vant from 'vant';
 import ElementUI from 'element-ui';
 
-import 'vant/lib/index.css';
 import 'element-ui/lib/theme-chalk/index.css';
 
-Vue.use(Vant);
+Vue.component(
+    'passport-clients',
+    require('./components/passport/Clients.vue').default
+);
+
+Vue.component(
+    'passport-authorized-clients',
+    require('./components/passport/AuthorizedClients.vue').default
+);
+
+Vue.component(
+    'passport-personal-access-tokens',
+    require('./components/passport/PersonalAccessTokens.vue').default
+);
+
 Vue.use(ElementUI);
 
 const app = new Vue({

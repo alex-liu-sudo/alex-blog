@@ -17,17 +17,17 @@ use Illuminate\Http\Request;
 //    return $request->user();
 //});
 
-$api = app('Dingo\Api\Routing\Router');
-
-$api->version('v1', function ($api) {
-
-    $api->group([
-        'namespace' => 'App\Http\Controllers\Api\V1'
-
-    ], function($api) {
-
-        $api->get('activity', 'ActivityController@index');
-        $api->get('goods', 'ActivityController@goods');
-    });
-
-});
+//$api = app('Dingo\Api\Routing\Router');
+//
+//$api->version('v1', function ($api) {
+//
+//    $api->group([
+//        'namespace' => 'App\Http\Controllers\Api\V1'
+//
+//    ], function($api) {
+//
+//        $api->get('activity', 'ActivityController@index');
+//        $api->get('goods', 'ActivityController@goods');
+//    });
+//
+//});
