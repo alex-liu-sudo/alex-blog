@@ -4458,7 +4458,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/_css-loade
 
 
 // module
-exports.push([module.i, ".container .main {\n  margin: 0;\n  padding: 0 10%;\n  width: 80%;\n  background: #f0f2f5;\n  min-height: 1000px;\n}\nbody {\n  margin: 0;\n  padding: 0;\n}", ""]);
+exports.push([module.i, ".container .main {\n  margin: 0;\n  padding: 1rem 10% 2rem;\n  width: 80%;\n  background: #f0f2f5;\n  min-height: 1000px;\n}\nbody {\n  margin: 0;\n  padding: 0;\n}\n.fr {\n  float: right;\n}\n.fl {\n  float: left;\n}", ""]);
 
 // exports
 
